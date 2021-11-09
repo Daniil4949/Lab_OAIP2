@@ -5,7 +5,7 @@
 #include <cstdio>
 #include <string>
 #include <cstdlib>
-
+//7 лабораторная для типа string
 using namespace std;
 int main() {
     system("chcp 1251>nul");
@@ -18,22 +18,22 @@ int main() {
     int i = 0;
     int l = st.length();
     string S = " ";
-    st += S;
+    st += S;//добавление пробела в конец строки 
     for (int i = 0; i <= l; i++) {
 
         if (st[i] != ' ') {
-            n++;
+            n++;//длина последовательности нулей и единиц 
             if (st[i] == '1') {
-                t++;
+                t++;//количество единиц в строке 
             }
         }
         else
         {
             if (n % 2 != 0) {
-                s += t;
+                s += t;//если число членов последовательности нечетно 
             }
             n = 0;
-            t = 0;
+            t = 0;//обнуление значений, переход к другой последовательности 
 
 
 
