@@ -1,17 +1,17 @@
 ﻿// GitTest.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+//Это Четвертая лаба по ОАИПУ, вот ее решение
 #include <iostream>
 #include <cstdio>
 #include <cmath>
 #include <string>
 #include <cstdlib>
 using namespace std;
-double S(double, int);
+double S(double, int);//объявление функций
 double Y(double);
 int factorial(int);
 void Out_rez(double, int);
-int factorial(int k)
+int factorial(int k)//функция факториаала
 {
     int s = 1;
 
@@ -24,13 +24,13 @@ int factorial(int k)
 }
 
 double S(double x, int k) {
-    return (cos(k * x))/(factorial(k));
+    return (cos(k * x))/(factorial(k));//функция для подсчета суммы S 
 }
 double Y(double x) {
-    return exp(cos(x)) * cos(sin(x));
+    return exp(cos(x)) * cos(sin(x));//результат вычисления функции Y 
 }
 void Out_rez(double a, int n) {
-    double h = 0.1, b = 1.0;
+    double h = 0.1, b = 1.0;//фунция для вывода данных
     double y = 0, s = 0;
     for (double x = a; x <= b; x += h)
     {
