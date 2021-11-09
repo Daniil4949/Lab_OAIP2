@@ -40,7 +40,7 @@ void Out_rez(double a, int n) {
              
         }
         y = Y(x); 
-        cout<<" S(x)=" <<s <<" Y(x)=" << " " << y << " " <<" |S(x)-Y(x)|=" << abs(s - y) << endl;
+        cout<<" S(x)=" <<s <<" Y(x)=" << " " << y << " " <<" |S(x)-Y(x)|=" << abs(s - y) << endl;//и еще разность по модулю
         y = 0;
         s = 0;
     }
